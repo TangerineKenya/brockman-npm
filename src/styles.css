@@ -1,1 +1,46 @@
+
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import '~https://fonts.googleapis.com/icon?family=Material+Icons';
+@import '~@swimlane/ngx-datatable/release/index.css';
+@import '~@swimlane/ngx-datatable/release/themes/material.css';
+@import '~@swimlane/ngx-datatable/release/assets/icons.css';
+@import '~leaflet/dist/leaflet.css';
+/*@import '~leaflet/dist/images/marker-shadow.png';
+@import '~leaflet/dist/images/marker-icon.png';*/
 /* You can add global styles to this file, and also import other style files */
+
+body {
+    font-family: Roboto,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
+    margin: 0;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    background: #F4F4F4;
+}
+.tangerine-card {
+  width: 100%;
+  margin: 0;
+  margin-top: 0px;
+  margin-right: 15px;
+  margin-bottom: 0px;
+  margin-left: 15px;
+}
+.tangerine-grid {
+  margin-top: 0px;
+  margin: 0;
+}
+.box {
+    /*min-height: 128px;*/
+    padding-bottom: 40px;
+    margin-right: 15px;
+    margin-left: 15px;
+    display: block;
+    background-color: #F4F4F4;
+}
+.map-box{
+  height: 500px;
+}
+.footer-notes{
+  
+}

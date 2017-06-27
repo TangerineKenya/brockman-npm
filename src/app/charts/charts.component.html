@@ -1,0 +1,180 @@
+<md-grid-list cols="2">
+    <md-grid-tile>
+        <md-card class="tangerine-card ">
+        	<md-card-title>Classroom Observations (Public)</md-card-title>
+        	<md-card-content>
+               <ngx-charts-bar-horizontal
+                  [view]="[700, 700]"
+                  [scheme]="colorScheme"
+                  [results]="observationsPublic"
+                  [gradient]="gradient"
+                  [xAxis]="showXAxis"
+                  [yAxis]="showYAxis"
+                  [legend]="false"
+                  [showXAxisLabel]="showXAxisLabel"
+                  [showYAxisLabel]="showYAxisLabel"
+                  [xAxisLabel]="xAxisLabel"
+                  [yAxisLabel]="yAxisLabel"
+                  >
+                </ngx-charts-bar-horizontal>  
+            </md-card-content>
+        </md-card>
+    </md-grid-tile>
+    <md-grid-tile>
+        <md-card class="tangerine-card ">
+        	<md-card-title>Classroom Observations (APBET)</md-card-title>
+            
+        	<md-card-content>
+                <ngx-charts-bar-horizontal
+                  [view]="[700, 700]"
+                  [scheme]="colorScheme"
+                  [results]="observationsApbet"
+                  [gradient]="gradient"
+                  [xAxis]="showXAxis"
+                  [yAxis]="showYAxis"
+                  [legend]="false"
+                  [showXAxisLabel]="showXAxisLabel"
+                  [showYAxisLabel]="showYAxisLabel"
+                  [xAxisLabel]="xAxisLabel"
+                  [yAxisLabel]="yAxisLabel"
+                  >
+                </ngx-charts-bar-horizontal>  
+            </md-card-content>
+            <md-card-footer></md-card-footer>
+        </md-card>
+    </md-grid-tile>
+</md-grid-list>
+<md-grid-list cols="3">
+    <md-grid-tile>
+        <md-card class="tangerine-card ">
+            <md-card-title>English Score - Class 1</md-card-title>
+            <md-card-content>
+                <ngx-charts-bar-horizontal
+                  [view]="view"
+                  [scheme]="colorScheme"
+                  [results]="datasetScoresEng1"
+                  [gradient]="gradient"
+                  [xAxis]="showXAxis"
+                  [yAxis]="showYAxis"
+                  [legend]="false"
+                  [showXAxisLabel]="showXAxisLabel"
+                  [showYAxisLabel]="showYAxisLabel"
+                  [xAxisLabel]="xAxisLabel"
+                  [yAxisLabel]="yAxisLabel"
+                  >
+                </ngx-charts-bar-horizontal>    
+            </md-card-content>
+            <md-card-footer></md-card-footer>
+        </md-card>
+    </md-grid-tile>
+    <md-grid-tile>
+        <md-card class="tangerine-card ">
+            <md-card-title>English Score - Class 2</md-card-title>
+            <md-card-content>
+                <ngx-charts-bar-horizontal
+                  [view]="view"
+                  [scheme]="colorScheme"
+                  [results]="datasetScoresEng1"
+                  [gradient]="gradient"
+                  [xAxis]="showXAxis"
+                  [yAxis]="showYAxis"
+                  [legend]="showLegend"
+                  [showXAxisLabel]="showXAxisLabel"
+                  [showYAxisLabel]="showYAxisLabel"
+                  [xAxisLabel]="xAxisLabel"
+                  [yAxisLabel]="yAxisLabel"
+                  >
+                </ngx-charts-bar-horizontal>  
+            </md-card-content>
+            <md-card-footer></md-card-footer>
+        </md-card>
+    </md-grid-tile>
+    <md-grid-tile>
+        <md-card class="tangerine-card ">
+            <md-card-title>English Score - Class 3</md-card-title>
+            <md-card-content>
+                <ngx-charts-bar-horizontal
+                  [view]="view"
+                  [scheme]="colorScheme"
+                  [results]="datasetScoresEng1"
+                  [gradient]="gradient"
+                  [xAxis]="showXAxis"
+                  [yAxis]="showYAxis"
+                  [legend]="showLegend"
+                  [showXAxisLabel]="showXAxisLabel"
+                  [showYAxisLabel]="showYAxisLabel"
+                  [xAxisLabel]="xAxisLabel"
+                  [yAxisLabel]="yAxisLabel"
+                  >
+                </ngx-charts-bar-horizontal>  
+            </md-card-content>
+            <md-card-footer></md-card-footer>
+        </md-card>
+    </md-grid-tile>
+    <md-grid-tile>
+        <md-card class="tangerine-card ">
+            <md-card-title>Kiswahili Score - Class 1</md-card-title>
+            <md-card-content>
+                <ngx-charts-bar-horizontal
+                  [view]="view"
+                  [scheme]="colorScheme"
+                  [results]="datasetScoresEng1"
+                  [gradient]="gradient"
+                  [xAxis]="showXAxis"
+                  [yAxis]="showYAxis"
+                  [legend]="showLegend"
+                  [showXAxisLabel]="showXAxisLabel"
+                  [showYAxisLabel]="showYAxisLabel"
+                  [xAxisLabel]="xAxisLabel"
+                  [yAxisLabel]="yAxisLabel"
+                  >
+                </ngx-charts-bar-horizontal>  
+            </md-card-content>
+            <md-card-footer></md-card-footer>
+        </md-card>
+    </md-grid-tile>
+    <md-grid-tile>
+        <md-card class="tangerine-card ">
+            <md-card-title>Chart 4</md-card-title>
+            <md-card-content>
+                <ngx-charts-bar-horizontal
+                  [view]="view"
+                  [scheme]="colorScheme"
+                  [results]="datasetScoresEng1"
+                  [gradient]="gradient"
+                  [xAxis]="showXAxis"
+                  [yAxis]="showYAxis"
+                  [legend]="showLegend"
+                  [showXAxisLabel]="showXAxisLabel"
+                  [showYAxisLabel]="showYAxisLabel"
+                  [xAxisLabel]="xAxisLabel"
+                  [yAxisLabel]="yAxisLabel"
+                  >
+                </ngx-charts-bar-horizontal>  
+            </md-card-content>
+            <md-card-footer></md-card-footer>
+        </md-card>
+    </md-grid-tile>
+    <md-grid-tile>
+        <md-card class="tangerine-card ">
+            <md-card-title>Chart 4</md-card-title>
+            <md-card-content>
+                <ngx-charts-bar-horizontal
+                  [view]="view"
+                  [scheme]="colorScheme"
+                  [results]="datasetScoresEng1"
+                  [gradient]="gradient"
+                  [xAxis]="showXAxis"
+                  [yAxis]="showYAxis"
+                  [legend]="showLegend"
+                  [showXAxisLabel]="showXAxisLabel"
+                  [showYAxisLabel]="showYAxisLabel"
+                  [xAxisLabel]="xAxisLabel"
+                  [yAxisLabel]="yAxisLabel"
+                  >
+                </ngx-charts-bar-horizontal>  
+            </md-card-content>
+            <md-card-footer></md-card-footer>
+        </md-card>
+    </md-grid-tile>
+</md-grid-list>

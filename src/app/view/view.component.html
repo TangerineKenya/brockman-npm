@@ -1,0 +1,52 @@
+<div class="box">
+    <md-card>
+    <md-card-title>{{this.countyName}} County CSO Report ({{this.year}} {{this.monthName}})</md-card-title>
+    <md-card-subtitle>
+                <md-select placeholder="Select county" (change)='onSelect($event)'>
+                    <md-option *ngFor="let key of keyArray" [value]="key">{{locationList[key].label}}</md-option>
+                </md-select>
+                <md-select placeholder="Year" [(ngModel)]="year" (change)="onChangeYear($event)">
+                    <md-option [value]="2018">2018</md-option>
+                    <md-option [value]="2017">2017</md-option>
+                    <md-option [value]="2016">2016</md-option>
+                    <md-option [value]="2015">2015</md-option>
+                </md-select>
+                <md-select placeholder="Month" [(ngModel)]="month" (change)="onChangeMonth($event)">
+                    <md-option [value]=1>January</md-option>
+                    <md-option [value]=2>February</md-option>
+                    <md-option [value]=3>March</md-option>
+                    <!--<md-option [value]="4">April</md-option>-->
+                    <md-option [value]=5>May</md-option>
+                    <md-option [value]=6>June</md-option>
+                    <md-option [value]=7>July</md-option>
+                    <!--<md-option [value]="7">August</md-option>-->
+                    <md-option [value]=8>September</md-option>
+                    <md-option [value]=9>October</md-option>
+                    <md-option [value]=11>November</md-option>
+                    <!--<md-option [value]=12>December</md-option>-->
+                </md-select>
+                <!--<md-card-actions align="end">
+                  <button md-icon-button mdTooltip="Print"><md-icon>print</md-icon></button>
+                  <button md-icon-button mdTooltip="Email"><md-icon>email</md-icon></button>
+                </md-card-actions>-->
+            </md-card-subtitle>
+    <md-card-content>
+        <ngx-datatable class="material striped fullscreen" [rows]="rows" [columns]="columns" [columnMode]="'force'">
+        </ngx-datatable>
+        <ol>
+            <li><b>Numbers of classroom visits are</b> defined as TUSOME classroom observations that include all forms and all 3 pupils assessments, with at least 20 minutes duration, and took place between 7AM and 3.10PM of any calendar day during the selected month.</li>
+            <li><b>Targeted number of classroom visits</b> is equivalent to the number of class schools in each zone.</li>
+            <li><b>Correct per minute</b> is the calculated average out of all individual assessment results from all qualifying classroom visits in the selected month to date, divided by the total number of assessments conducted.</li>
+            <li><b>Percentage at KNEC benchmark</b> is the percentage of those students that have met the KNEC benchmark for either Kiswahili or English, and for either class 1, class 2 or class 3, out of all of the students assessed for those subjects. The benchmarks for class 3 are yet to be defined.</li>
+        </ol>
+    </md-card-content>
+    <md-card-footer></md-card-footer>
+    </md-card>
+</div>
+<div class="box">
+    <md-card>
+        <md-card-content>
+            <div leaflet class="map-box" [leafletOptions]="options"></div>
+        </md-card-content>
+    </md-card>
+</div>
